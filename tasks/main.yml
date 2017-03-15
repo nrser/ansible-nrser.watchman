@@ -1,0 +1,7 @@
+---
+# tasks file for nrser.watchman
+
+- name: install watchman
+  include: "install/{{ ansible_distribution }}.yml"
+  when: watchman_install
+  
